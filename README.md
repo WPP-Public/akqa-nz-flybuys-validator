@@ -1,6 +1,8 @@
 # FlyBuys validator
 
-Validates flybuys numbers
+Validates flybuys numbers.
+
+NOTE: This is experimental
 
 ## Installation
 
