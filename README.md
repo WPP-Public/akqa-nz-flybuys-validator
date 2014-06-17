@@ -1,4 +1,4 @@
-# FlyBuys validate
+# FlyBuys validator
 
 Validates flybuys numbers
 
