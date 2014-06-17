@@ -1,0 +1,12 @@
+{
+	"name": "heyday/flybuys-validator",
+	"description": "Validate FlyBuys numbers",
+	"license": "MIT",
+	"authors": [{
+		"name": "Cam Spiers",
+		"email": "camspiers@gmail.com"
+	}],
+	"autoload": {
+		"files": ["src/main.php"]
+	}
+}
