@@ -13,6 +13,9 @@ namespace Flybuys;
 
 /**
  * Validates a flybuys number provided as a string or array
+ * 
+ * Input must only contain numeric chars
+ * 
  * @param array|string $number
  * @throws \InvalidArgumentException
  * @return bool
