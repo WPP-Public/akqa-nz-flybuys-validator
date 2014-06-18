@@ -26,6 +26,10 @@ function validate($number) {
         $number = str_split($number);
     }
 
+    if (count($number) !== 16) {
+        return false;
+    }
+
     $ints = array();
 
     // Prepare values so they are all ints and have the right keys
@@ -37,22 +41,18 @@ function validate($number) {
         }
     }
 
-    if (count($ints) !== 16) {
-        return false;
-    }
-
     $checkDigitSum = 0;
 
     for ($i = 0; $i < 15; $i++) {
-        if ($i % 2 !== 0) {
-            $val  = $ints[$i];
-        } else {
+        if ($i % 2 === 0) {
             $val = $ints[$i] * 2;
 
             if ($val > 9) {
                 $val = (string) $val;
                 $val = $val[0] + $val[1];
             }
+        } else {
+            $val  = $ints[$i];
         }
 
         $checkDigitSum += $val;
