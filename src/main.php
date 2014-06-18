@@ -27,11 +27,13 @@ function validate($number) {
     }
 
     $ints = array();
-    
+
     // Prepare values so they are all ints and have the right keys
     foreach ($number as $val) {
         if (is_numeric($val)) {
             $ints[] = (int) $val;
+        } else {
+            return false;
         }
     }
 
