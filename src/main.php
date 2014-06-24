@@ -43,6 +43,10 @@ function validate($number) {
             return false;
         }
     }
+    
+    if (array_slice($ints, 0, 6) !== array(6, 0, 1, 4, 3, 5)) {
+        return false;
+    }
 
     $checkDigitSum = 0;
 
