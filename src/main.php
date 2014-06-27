@@ -65,5 +65,5 @@ function validate($number) {
         $checkDigitSum += $val;
     }
 
-    return 10 - ($checkDigitSum % 10) === end($ints);
+    return (10 - ($checkDigitSum % 10)) % 10 === end($ints);
 }
